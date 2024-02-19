@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "saudagar";
+  src: url("../assets/fonts/Saudagar.ttf");
+}
+
+.sec-four {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: saudagar;
+  background-color: #a4ab91;
+  color: #c6af90;
+}
+
+.sec-four-cover-ctn {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-four-content-ctn {
+  margin: 100px 0px;
+  width: 72%;
+  border-radius: 30px;
+  padding: 50px 20px;
+  display: flex;
+  padding-bottom: 150px;
+  background-color: #f4f3ec;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+}
+
+.sec-four-content-ctn > img {
+  width: 150px;
+}
+
+.sec-four-content-ctn > h2 {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.sec-four-content-ctn > p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+.function-dets-ctn {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.dets-ctn {
+  width: 40%;
+  padding: 100px 0px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+}
+
+.dets-ctn > img:nth-child(1) {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+}
+
+.dets-ctn > img:nth-child(2) {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  width: 120%;
+}
+
+.dets-ctn > h1 {
+  font-size: 35px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.dets-ctn > button {
+  cursor: pointer;
+  background-image: linear-gradient(165deg, #c4ac8c 0%, #b2ac8e 100%);
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 40px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+
+.dets-ctn > button:hover {
+  transition: all 0.3s linear;
+  transform: translateY(-7.5px);
+}
+
+.line {
+  height: 1px;
+  width: 150px;
+  background-color: #c4ac8c;
+}
+
+.dets-ctn > p {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dets-ctn > p:nth-child(6) {
+  line-height: 40px;
+}
+.dets-ctn > p:nth-child(9) {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 35px;
+}
+.dets-ctn > p:nth-child(12) {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .function-dets-ctn {
+    flex-direction: column;
+    align-items: center;
+    gap: 300px;
+  }
+
+  .dets-ctn {
+    width: 100%;
+  }
+
+  .dets-ctn > img:nth-child(1) {
+    width: 120%;
+  }
+
+  .dets-ctn > img:nth-child(2) {
+    width: 120%;
+  }
+
+  .sec-four-content-ctn {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .function-dets-ctn {
+    flex-direction: column;
+    align-items: center;
+    gap: 300px;
+  }
+
+  .dets-ctn {
+    width: 80%;
+  }
+
+  .dets-ctn > img:nth-child(1) {
+    width: 120%;
+  }
+
+  .dets-ctn > img:nth-child(2) {
+    width: 120%;
+  }
+}

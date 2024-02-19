@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "saudagar";
+  src: url("../assets/fonts/Saudagar.ttf");
+}
+
+.sec-six {
+  width: 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  font-family: saudagar;
+  background-color: #faf9f6;
+  color: #c6af90;
+}
+
+.sec-six-cover-ctn {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-six-content-ctn {
+  width: 100%;
+  display: flex;
+  padding: 50px 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sec-six-content-ctn > button {
+  cursor: pointer;
+  background-color: #757a3e;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 40px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+
+.sec-six-content-ctn > button:hover {
+  transition: all 0.3s linear;
+  transform: translateY(-7.5px);
+}
+
+.video-ctn {
+  width: 70%;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.gallery-ctn {
+  width: 70%;
+  columns: 3;
+  column-rule: 2px solid #757a3e;
+  gap: 0;
+  /* overflow: hidden; */
+}
+
+.gallery-ctn > img {
+  width: 100%;
+  aspect-ratio: 1 / 2;
+  scale: 1.05;
+  object-fit: cover;
+  /* object-position: center; */
+}

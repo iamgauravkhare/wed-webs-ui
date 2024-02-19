@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "saudagar";
+  src: url("../assets/fonts/Saudagar.ttf");
+}
+
+.sec-eight {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: saudagar;
+  background-image: linear-gradient(240deg, #a4ab91 0%, #868e6f 100%);
+  position: relative;
+}
+
+.sec-eight-cover-ctn {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-eight-content-ctn {
+  width: 100%;
+  display: flex;
+  padding: 100px 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sec-eight-content-ctn > svg {
+  fill: #dad7ce;
+  height: 120px;
+  position: relative;
+  transform: rotate(360deg);
+}
+
+.sec-eight-content-ctn > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sec-eight-content-ctn > div > i {
+  background-color: #dad7ce;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 100%;
+  color: #676441;
+}
+
+.sec-eight-content-ctn > p {
+  font-size: 14px;
+  color: #dad7ce;
+}
+
+.gsap-marker-scroller-start {
+  z-index: 10000000;
+}

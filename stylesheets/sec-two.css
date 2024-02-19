@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "saudagar";
+  src: url("../assets/fonts/Saudagar.ttf");
+}
+
+.sec-two {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: saudagar;
+  position: relative;
+  background-color: #faf9f6;
+  color: #c6af90;
+  padding: 100px 0px;
+}
+
+.overlay {
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+}
+
+.overlay > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.sec-two-cover-ctn {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.sec-two-content-ctn {
+  z-index: 200;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 95px;
+  position: relative;
+}
+
+.couple-dets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.couple-dets > img:nth-child(2) {
+  width: 350px;
+  border-radius: 200px;
+}
+
+.couple-dets > h2 {
+  font-size: 42px;
+  font-weight: 750;
+  text-align: center;
+}
+
+.couple-dets > h5 {
+  font-size: 24px;
+  text-align: center;
+  color: #c6af90;
+}
+
+.couple-dets > p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.75);
+  letter-spacing: 0.5px;
+}
+
+.instagram-icon {
+  width: 50px;
+  background-color: #c6af90;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.sec-two-content-ctn > span {
+  font-size: 100px;
+}
+
+@media screen and (max-width: 320px) {
+  .sec-two {
+    padding: 50px 0px;
+  }
+
+  .sec-two-content-ctn {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .couple-dets > img:nth-child(2) {
+    width: 250px;
+    border-radius: 200px;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .sec-two {
+    padding: 100px 0px;
+  }
+
+  .sec-two-content-ctn {
+    flex-direction: column;
+    gap: 40px;
+    padding: 150px 0px;
+  }
+
+  .couple-dets > img:nth-child(2) {
+    width: 260px;
+    border-radius: 200px;
+  }
+
+  .overlay {
+    display: unset;
+    width: 350px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 768px) {
+  .sec-two-content-ctn {
+    flex-direction: column;
+    padding: 150px 0px;
+    gap: 60px;
+  }
+  .overlay {
+    display: unset;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}

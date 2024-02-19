@@ -1,0 +1,76 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 15000;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-cover-ctn {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-content-ctn {
+  width: 53%;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+}
+
+.nav-element > i {
+  color: #d3b07c;
+  font-size: 20px;
+  aspect-ratio: 1 / 1;
+  transition: all 0.25s ease-in;
+}
+
+.nav-element > a {
+  color: #d3b07c;
+  text-decoration: none;
+  transition: all 0.25s ease-in;
+}
+
+.nav-element:hover > i {
+  color: black;
+  transition: all 0.25s ease-in;
+  animation: nav-icon-anim 0.3s ease-in both;
+}
+
+@keyframes nav-icon-anim {
+  0% {
+    transform: skew(-15deg, -15deg);
+  }
+  50% {
+    transform: skew(15deg, 15deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-content-ctn {
+    width: 90%;
+  }
+}

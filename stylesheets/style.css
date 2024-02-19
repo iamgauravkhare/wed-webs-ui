@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+}
+
+.main-ctn {
+  z-index: 1000;
+  width: 100%;
+  /* overflow: hidden; */
+  position: relative;
+  display: none;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.music-play-btn {
+  position: fixed;
+  top: 85%;
+  left: 2%;
+  background-color: #ebba16;
+  color: white;
+  font-size: 20px;
+  border-radius: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 5px;
+  z-index: 15000;
+}
+
+.music-pause-btn {
+  position: fixed;
+  top: 85%;
+  left: 2%;
+  background-color: #ebba16;
+  color: white;
+  font-size: 20px;
+  border-radius: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 5px;
+  z-index: 15000;
+}
+
+.gsap-marker-scroller-start,
+.gsap-marker-scroller-end,
+.gsap-marker-end,
+.gsap-marker-start {
+  z-index: 10000000;
+}
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
