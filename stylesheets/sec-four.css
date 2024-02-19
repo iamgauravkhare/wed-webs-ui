@@ -1,6 +1,16 @@
 @font-face {
-  font-family: "saudagar";
+  font-family: "Aerotis";
+  src: url("../assets/fonts/Aerotis.ttf");
+}
+
+@font-face {
+  font-family: "Saudagar";
   src: url("../assets/fonts/Saudagar.ttf");
+}
+
+@font-face {
+  font-family: "Switzerland";
+  src: url("../assets/fonts/Switzerland-2.ttf");
 }
 
 .sec-four {
@@ -10,6 +20,7 @@
   font-family: saudagar;
   background-color: #a4ab91;
   color: #c6af90;
+  overflow: hidden;
 }
 
 .sec-four-cover-ctn {
@@ -24,7 +35,7 @@
   margin: 100px 0px;
   width: 72%;
   border-radius: 30px;
-  padding: 50px 20px;
+  padding: 100px 20px;
   display: flex;
   padding-bottom: 150px;
   background-color: #f4f3ec;
@@ -41,15 +52,18 @@
 
 .sec-four-content-ctn > h2 {
   font-size: 42px;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: "Switzerland";
 }
 
 .sec-four-content-ctn > p {
+  margin-top: -20px;
   text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  color: black;
-  letter-spacing: 0.5px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #606060;
+  font-family: gilroy-regular;
+  letter-spacing: 1px;
 }
 
 .function-dets-ctn {
@@ -58,18 +72,18 @@
   align-items: flex-start;
   justify-content: center;
   gap: 100px;
-  margin-top: 100px;
+  margin-top: 125px;
 }
 
 .dets-ctn {
-  width: 40%;
+  width: 33%;
   padding: 100px 0px;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 25px;
+  gap: 35px;
   position: relative;
 }
 
@@ -93,6 +107,7 @@
   font-size: 35px;
   font-weight: 600;
   font-style: italic;
+  font-family: Switzerland;
 }
 
 .dets-ctn > button {
@@ -107,6 +122,14 @@
   letter-spacing: 2px;
   font-weight: 600;
   transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dets-ctn > button > i {
+  font-size: 20px;
 }
 
 .dets-ctn > button:hover {
@@ -115,51 +138,68 @@
 }
 
 .line {
-  height: 1px;
+  height: 0.5px;
   width: 150px;
   background-color: #c4ac8c;
+  position: relative;
 }
 
-.dets-ctn > p {
+.line > i {
+  font-size: 35px;
+  position: absolute;
+  color: #c4ac8c;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 0 8px;
+  background-color: white;
+}
+
+.dets-sub-heading {
   font-size: 16px;
+  letter-spacing: 1px;
   font-weight: 600;
   text-align: center;
+  font-family: Saudagar;
 }
 
-.dets-ctn > p:nth-child(6) {
-  line-height: 40px;
-}
-.dets-ctn > p:nth-child(9) {
+.dets-sec-sub-heading {
   font-size: 14px;
   font-weight: 400;
   line-height: 35px;
-}
-.dets-ctn > p:nth-child(12) {
-  font-size: 14px;
-  font-weight: 400;
+  text-align: center;
+  font-family: gilroy-regular;
+  padding: 0px 40px;
 }
 
 @media screen and (max-width: 768px) {
   .function-dets-ctn {
     flex-direction: column;
     align-items: center;
-    gap: 300px;
+    gap: 200px;
   }
 
   .dets-ctn {
-    width: 100%;
+    width: 90%;
   }
 
   .dets-ctn > img:nth-child(1) {
-    width: 120%;
+    width: 110%;
   }
 
   .dets-ctn > img:nth-child(2) {
-    width: 120%;
+    width: 110%;
   }
 
   .sec-four-content-ctn {
     width: 90%;
+    gap: 50px;
+    padding: 200px 5px;
+    border-radius: 400px;
+  }
+
+  .sec-four-content-ctn > p {
+    padding: 0 20px;
   }
 }
 

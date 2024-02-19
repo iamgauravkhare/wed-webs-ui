@@ -4,60 +4,76 @@ const loaderBtn = document.querySelector(".loader-btn");
 const bgAudio = document.querySelector(".bg-audio");
 const musicPlayBtn = document.querySelector(".music-play-btn");
 const musicPauseBtn = document.querySelector(".music-pause-btn");
+const textAnim = document.querySelectorAll(".text-anim");
 
-loaderBtn.addEventListener("click", () => {
-  loader.style.display = "none";
-  mainCtn.style.display = "unset";
-  bgAudio.play();
-  musicPlayBtn.style.display = "none";
-  activateGSAP();
-});
+// loaderBtn.addEventListener("click", () => {
+//   loader.style.display = "none";
+//   mainCtn.style.display = "unset";
+//   musicPlayBtn.style.display = "none";
+//   bgAudio.play();
+//   activateGSAP();
+// });
 
 musicPlayBtn.addEventListener("click", () => {
-  bgAudio.play();
   musicPlayBtn.style.display = "none";
   musicPauseBtn.style.display = "unset";
+  bgAudio.play();
 });
 
 musicPauseBtn.addEventListener("click", () => {
-  bgAudio.pause();
   musicPlayBtn.style.display = "unset";
   musicPauseBtn.style.display = "none";
+  bgAudio.pause();
 });
 
-// .gsap-marker-scroller-start,
-// .gsap-marker-scroller-end,
-// .gsap-marker-end,
-// .gsap - marker - start
-
-// GSAP animation code -
-
 const activateGSAP = () => {
-  gsap.from(".anim-headr", {
+  gsap.from(".landing-page-card", {
     opacity: 0,
     scale: 0,
-    duration: 2,
-    scrollTrigger: {
-      scroller: "body",
-      trigger: ".anim-headr",
-      markers: true,
-      start: "top 75%",
-      end: "top 50%",
-      scrub: true,
-    },
+    duration: 1.5,
+    delay: 2,
+    ease: "power1.inOut",
   });
 
-  const gmss = (document.querySelector(
-    ".gsap-marker-scroller-start"
-  ).style.zIndex = "20000000");
+  textAnim.forEach((elem) => {
+    return gsap.from(elem, {
+      opacity: 0,
+      scale: 0,
+      duration: 1,
+      scrollTrigger: {
+        scroller: "body",
+        trigger: elem,
+        start: "top 85%",
+        end: "top 50%",
+        // markers: true,
+        // scrub: true,
+      },
+    });
+  });
 
-  const gmse = (document.querySelector(
-    ".gsap-marker-scroller-end"
-  ).style.zIndex = "20000000");
+  const gmss = document.querySelectorAll(".gsap-marker-scroller-start");
 
-  const gms = (document.querySelector(".gsap-marker-start").style.zIndex =
-    "20000000");
+  gmss.forEach((marker) => {
+    marker.style.zIndex = "20000000";
+  });
 
-  const gme = (document.querySelector(".gsap-marker-end").style.zIndex =
-    "20000000");
+  const gmse = document.querySelectorAll(".gsap-marker-scroller-end");
+
+  gmse.forEach((marker) => {
+    marker.style.zIndex = "20000000";
+  });
+
+  const gms = document.querySelectorAll(".gsap-marker-start");
+
+  gms.forEach((marker) => {
+    marker.style.zIndex = "20000000";
+  });
+
+  const gme = document.querySelectorAll(".gsap-marker-end");
+
+  gme.forEach((marker) => {
+    marker.style.zIndex = "20000000";
+  });
 };
+
+activateGSAP();

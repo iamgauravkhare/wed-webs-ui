@@ -14,12 +14,34 @@ body {
   position: relative;
 }
 
+/* width */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #c4ac8e;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(196, 172, 142, 0.75);
+}
+
 .main-ctn {
-  z-index: 1000;
+  /* min-height: 100vh; */
+  z-index: 990;
   width: 100%;
-  /* overflow: hidden; */
   position: relative;
-  display: none;
+  overflow: hidden;
+  background-color: #faf9f6;
+  /* display: none; */
 }
 
 .border {
@@ -28,35 +50,26 @@ body {
 
 .music-play-btn {
   position: fixed;
-  top: 85%;
-  left: 2%;
+  top: 75%;
+  left: 2.5%;
   background-color: #ebba16;
   color: white;
   font-size: 20px;
   border-radius: 100%;
-  aspect-ratio: 1 / 1;
   padding: 5px;
-  z-index: 15000;
+  z-index: 970;
 }
 
 .music-pause-btn {
   position: fixed;
-  top: 85%;
-  left: 2%;
+  top: 75%;
+  left: 2.5%;
   background-color: #ebba16;
   color: white;
   font-size: 20px;
   border-radius: 100%;
-  aspect-ratio: 1 / 1;
   padding: 5px;
-  z-index: 15000;
-}
-
-.gsap-marker-scroller-start,
-.gsap-marker-scroller-end,
-.gsap-marker-end,
-.gsap-marker-start {
-  z-index: 10000000;
+  z-index: 970;
 }
 
 @media screen and (max-width: 320px) {

@@ -1,6 +1,5 @@
 .sec-three {
-  /* display: none; */
-  height: 85vh;
+  height: 90vh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -41,6 +40,6 @@
 
 @media screen and (max-width: 450px) {
   .sec-three {
-    height: 50vh;
+    height: 60vh;
   }
 }
