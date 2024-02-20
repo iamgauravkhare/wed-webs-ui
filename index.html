@@ -14,21 +14,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./stylesheets/style.css" />
-    <!-- <link rel="stylesheet" href="./stylesheets/loader.css" /> -->
+    <link rel="stylesheet" href="./stylesheets/loader.css" />
     <link rel="stylesheet" href="./stylesheets/landing-page.css" />
     <link rel="stylesheet" href="./stylesheets/navbar.css" />
     <link rel="stylesheet" href="./stylesheets/sec-one.css" />
     <link rel="stylesheet" href="./stylesheets/sec-two.css" />
     <link rel="stylesheet" href="./stylesheets/sec-three.css" />
     <link rel="stylesheet" href="./stylesheets/sec-four.css" />
-    <!--  <link rel="stylesheet" href="./stylesheets/sec-five.css" />
+    <link rel="stylesheet" href="./stylesheets/sec-five.css" />
     <link rel="stylesheet" href="./stylesheets/sec-six.css" />
     <link rel="stylesheet" href="./stylesheets/sec-seven.css" />
-    <link rel="stylesheet" href="./stylesheets/sec-eight.css" /> -->
+    <link rel="stylesheet" href="./stylesheets/sec-eight.css" />
   </head>
   <body>
     <!-- loader -->
-    <!-- <div class="loader">
+    <div class="loader">
       <div class="l-cover-ctn">
         <div class="l-content-ctn">
           <h6>Dear</h6>
@@ -39,41 +39,41 @@
           <button class="loader-btn">VIEW INVITATION</button>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- main-ctn -->
     <div class="main-ctn">
       <!-- navbar -->
       <div class="navbar">
         <div class="navbar-cover-ctn">
           <div class="navbar-content-ctn">
-            <div class="nav-element">
+            <a href="#landing-page" class="nav-element">
               <i class="ri-tablet-line"></i>
-              <a href="">Home</a>
-            </div>
-            <div class="nav-element">
+              <span>Home</span>
+            </a>
+            <a href="#sec-two" class="nav-element">
               <i class="ri-group-fill"></i>
-              <a href="">Couple</a>
-            </div>
-            <div class="nav-element">
+              <span>Couple</span>
+            </a>
+            <a href="#sec-four" class="nav-element">
               <i class="ri-calendar-2-line"></i>
-              <a href="">Event</a>
-            </div>
-            <div class="nav-element">
+              <span>Event</span>
+            </a>
+            <a href="#sec-five" class="nav-element">
               <i class="ri-mail-download-fill"></i>
-              <a href="">RSVP</a>
-            </div>
-            <div class="nav-element">
+              <span>RSVP</span>
+            </a>
+            <a href="#bottom" class="nav-element">
               <i class="ri-gift-fill"></i>
-              <a href="">Gift</a>
-            </div>
+              <span>Gift</span>
+            </a>
           </div>
         </div>
       </div>
       <!-- landing-page -->
-      <div class="landing-page">
+      <div class="landing-page" id="landing-page">
         <audio src="assets/audios/audio.mp3" class="bg-audio"></audio>
         <div class="l-p-cover-ctn">
-          <div class="l-p-content-ctn" data-scroll data-scroll-speed="0.5">
+          <div class="l-p-content-ctn">
             <video
               src="./assets/videos/landing-page-video.mp4"
               muted
@@ -130,7 +130,7 @@
         </svg>
       </div>
       <!-- sec-two -->
-      <div class="sec-two">
+      <div class="sec-two" id="sec-two">
         <div class="sec-two-cover-ctn">
           <div class="overlay">
             <img
@@ -193,7 +193,7 @@
         <img src="./assets/images/crousel-img-1.jpg" alt="crousel-img-1" />
       </div>
       <!-- sec-four -->
-      <div class="sec-four">
+      <div class="sec-four" id="sec-four">
         <div class="sec-four-cover-ctn">
           <div class="sec-four-content-ctn">
             <img src="./assets/images/logo.png" alt="logo" />
@@ -234,7 +234,7 @@
                 <p class="dets-sec-sub-heading text-anim">
                   Jl. Pratama No.168, Tanjung, Benoa, Kuta Selatan, Badung, Bali
                 </p>
-                <button class="text-anim">
+                <button class="box-anim">
                   <i class="ri-map-pin-fill"></i>VIEW LOCATION
                 </button>
               </div>
@@ -274,7 +274,7 @@
                 <p class="dets-sec-sub-heading text-anim">
                   Jl. Pratama No.168, Tanjung, Benoa, Kuta Selatan, Badung, Bali
                 </p>
-                <button class="text-anim">
+                <button class="box-anim">
                   <i class="ri-map-pin-fill"></i> VIEW LOCATION
                 </button>
               </div>
@@ -283,16 +283,17 @@
         </div>
       </div>
       <!-- sec-five -->
-      <!-- <div class="sec-five">
+      <div class="sec-five" id="sec-five">
         <div class="sec-five-cover-ctn">
           <div class="sec-five-content-ctn">
             <div class="top">
-              <h2>RSVP</h2>
-              <p>
+              <h2 class="text-anim">RSVP</h2>
+              <p class="text-anim">
                 Please help us prepare everything better by confirming your
-                attendance at our wedding event with the following RSVP form:
+                attendance at our wedding event with the <br />following RSVP
+                form:
               </p>
-              <form class="border">
+              <form>
                 <div class="input-ctn">
                   <label for="name">Name: <sup>*</sup></label>
                   <input type="text" id="name" />
@@ -327,10 +328,10 @@
                   <textarea id="wishes" cols="30" rows="8"></textarea>
                 </div>
                 <div class="input-ctn">
-                  <input type="submit" value="submit" class="form-btn" />
+                  <button class="form-btn">Submit</button>
                 </div>
               </form>
-              <div class="cards-ctn border">
+              <div class="cards-ctn">
                 <div class="card">
                   <h2>Ellen</h2>
                   <p>
@@ -351,7 +352,7 @@
                   <h2>Ellen</h2>
                   <p>
                     Congratulations ko michael & partner! May your marriage
-                    filled with abundance love and joy
+                    filled with abundance love and joy 💖
                   </p>
                   <p>November 5, 2023 <span>.</span> 6:53 pm</p>
                 </div>
@@ -413,14 +414,16 @@
                 </div>
               </div>
             </div>
-            <div class="bottom">
-              <h2>Wedding Gift</h2>
-              <p>
+            <div class="bottom" id="bottom">
+              <h2 class="text-anim">Wedding Gift</h2>
+              <p class="text-anim">
                 Your presence is a present in itself. But if you do wish to give
-                us something else, please tap the button down below for further
-                information:
+                us something else, please tap the button down <br />
+                below for further information:
               </p>
-              <button class="sec-five-btn">SEND GIFT</button>
+              <button class="sec-five-btn box-anim">
+                <i class="ri-gift-fill"></i>SEND GIFT
+              </button>
             </div>
           </div>
         </div>
@@ -434,58 +437,65 @@
             d="M1000,4.3V0H0v4.3C0.9,23.1,126.7,99.2,500,100S1000,22.7,1000,4.3z"
           ></path>
         </svg>
-      </div> -->
+      </div>
       <!-- sec-six -->
-      <!-- <div class="sec-six">
+      <div class="sec-six">
         <div class="sec-six-cover-ctn">
           <div class="sec-six-content-ctn">
-            <h2 class="anim-headr">Our journey starts here</h2>
-            <p>
+            <h2 class="text-anim">Our journey starts here</h2>
+            <p class="text-anim">
               If I had a flower for every time I thought of you… I could walk
               through my garden forever. <br />
               ~Alfred Tenyson
             </p>
-            <div class="video-ctn">
-              <iframe
-                src="https://www.youtube.com/embed/HopDgUulGxY"
-                title="Michael &amp; Jessica"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
+            <iframe
+              src="https://www.youtube.com/embed/HopDgUulGxY"
+              title="Michael &amp; Jessica"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="text-anim"
+            ></iframe>
             <div class="gallery-ctn">
               <img
                 src="./assets/images/gallery-img-1.webp"
                 alt="gallery-img-1"
+                class="text-anim"
               />
               <img
                 src="./assets/images/gallery-img-2.webp"
                 alt="gallery-img-2"
+                class="text-anim"
               />
               <img
                 src="./assets/images/gallery-img-3.webp"
                 alt="gallery-img-3"
+                class="text-anim"
               />
               <img
                 src="./assets/images/gallery-img-4.webp"
                 alt="gallery-img-4"
+                class="text-anim"
               />
               <img
                 src="./assets/images/gallery-img-5.webp"
                 alt="gallery-img-5"
+                class="text-anim"
               />
               <img
                 src="./assets/images/gallery-img-6.webp"
                 alt="gallery-img-6"
+                class="text-anim"
               />
             </div>
-            <button>Our Story</button>
+            <button class="box-anim">
+              <i class="ri-gallery-fill"></i>Our Story
+            </button>
           </div>
         </div>
-      </div> -->
-      <!-- sec-five -->
-      <!-- <div class="sec-seven">
+      </div>
+      <!-- sec-seven -->
+      <div class="sec-seven">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1000 100"
@@ -500,18 +510,19 @@
           <div class="sec-seven-content-ctn">
             <div class="counter-ctn-cover">
               <div class="counter-ctn">
-                <img src="./assets/images/logo.png" alt="" />
-                <div class="counter-box-ctn">
+                <img src="./assets/images/logo.png" alt="logo" />
+                <div class="counter-box-ctn text-anim">
                   <div class="counter-box">00 <span>Days</span></div>
                   <div class="counter-box">00 <span>Hours</span></div>
                   <div class="counter-box">00 <span>Minutes</span></div>
                   <div class="counter-box">00 <span>Seconds</span></div>
                 </div>
-                <button class="sec-seven-btn">ADD TO CALENDAR</button>
+                <button class="sec-seven-btn">
+                  <i class="ri-calendar-2-line"></i>ADD TO CALENDAR
+                </button>
               </div>
             </div>
-
-            <p>
+            <p class="text-anim">
               We look forward to welcoming you <br />
               in our wedding day
             </p>
@@ -520,12 +531,12 @@
           <img
             src="./assets/images/sec-two-bg-img.jpeg"
             class="sec-seven-bg"
-            alt=""
+            alt="sec-seven-bg"
           />
         </div>
-      </div> -->
+      </div>
       <!-- sec-eight -->
-      <!-- <div class="sec-eight">
+      <div class="sec-eight">
         <div class="sec-eight-cover-ctn">
           <div class="sec-eight-content-ctn">
             <svg
@@ -533,6 +544,7 @@
               id="Layer_1"
               data-name="Layer 1"
               viewBox="0 0 586.47 621.54"
+              class="sec-eight-svg-anim"
             >
               <title>Logo 2022 Square</title>
               <g id="Square">
@@ -574,18 +586,18 @@
                 ></path>
               </g>
             </svg>
-            <div>
+            <div class="social-icn-ctn">
               <i class="ri-instagram-line"></i>
               <i class="ri-facebook-circle-fill"></i>
               <i class="ri-whatsapp-line"></i>
             </div>
-            <p>
+            <p class="text-anim">
               Backsound: Quando Quando Quando | Cover by Matthew Ifield with
               Francesca Hojda!
             </p>
           </div>
         </div>
-      </div> -->
+      </div>
       <i class="ri-music-fill music-play-btn music-btn"></i>
       <i class="ri-pause-circle-fill music-pause-btn music-btn"></i>
     </div>

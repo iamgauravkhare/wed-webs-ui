@@ -3,6 +3,11 @@
   src: url("../assets/fonts/Saudagar.ttf");
 }
 
+@font-face {
+  font-family: "gilroy-regular";
+  src: url("../assets/fonts/Gilroy-Regular.otf");
+}
+
 .sec-eight {
   width: 100%;
   display: flex;
@@ -10,6 +15,7 @@
   font-family: saudagar;
   background-image: linear-gradient(240deg, #a4ab91 0%, #868e6f 100%);
   position: relative;
+  overflow: hidden;
 }
 
 .sec-eight-cover-ctn {
@@ -23,10 +29,10 @@
 .sec-eight-content-ctn {
   width: 100%;
   display: flex;
-  padding: 100px 20px;
+  padding: 120px 20px;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   flex-direction: column;
   text-align: center;
 }
@@ -47,15 +53,26 @@
 
 .sec-eight-content-ctn > div > i {
   background-color: #dad7ce;
-  padding: 10px;
+  padding: 7.5px;
   font-size: 25px;
   border-radius: 100%;
   color: #676441;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.sec-eight-content-ctn > div > i:hover {
+  opacity: 0.75;
+  transition: all 0.1s ease-in;
 }
 
 .sec-eight-content-ctn > p {
-  font-size: 14px;
+  font-size: 10px;
   color: #dad7ce;
+  font-family: "gilroy-regular";
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .gsap-marker-scroller-start {

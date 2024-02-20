@@ -1,16 +1,22 @@
 @font-face {
-  font-family: "saudagar";
-  src: url("../assets/fonts/Saudagar.ttf");
+  font-family: "Switzerland";
+  src: url("../assets/fonts/Switzerland-2.ttf");
+}
+
+@font-face {
+  font-family: "gilroy-regular";
+  src: url("../assets/fonts/Gilroy-Regular.otf");
 }
 
 .sec-six {
   width: 100%;
-  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
-  font-family: saudagar;
+  font-family: "gilroy-regular";
+  font-weight: 500;
   background-color: #faf9f6;
   color: #c6af90;
+  overflow: hidden;
 }
 
 .sec-six-cover-ctn {
@@ -25,10 +31,25 @@
   width: 100%;
   display: flex;
   padding: 50px 20px;
+  padding-bottom: 70px;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
   flex-direction: column;
+  text-align: center;
+}
+
+.sec-six-content-ctn > h2 {
+  margin-top: 10px;
+  font-size: 45px;
+  font-family: "Switzerland";
+  text-align: center;
+}
+
+.sec-six-content-ctn > p {
+  line-height: 50px;
+  margin-top: -40px;
+  color: #606060;
   text-align: center;
 }
 
@@ -38,12 +59,21 @@
   border-radius: 50px;
   border: none;
   outline: none;
+  font-family: gilroy-regular;
   color: white;
   padding: 20px 40px;
-  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
   letter-spacing: 2px;
   font-weight: 600;
   transition: all 0.3s linear;
+}
+
+.sec-six-content-ctn > button > i {
+  font-size: 20px;
 }
 
 .sec-six-content-ctn > button:hover {
@@ -51,21 +81,16 @@
   transform: translateY(-7.5px);
 }
 
-.video-ctn {
-  width: 70%;
-}
-
 iframe {
-  width: 100%;
+  width: 70%;
   aspect-ratio: 16/9;
 }
 
 .gallery-ctn {
   width: 70%;
   columns: 3;
-  column-rule: 2px solid #757a3e;
   gap: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .gallery-ctn > img {
@@ -73,5 +98,26 @@ iframe {
   aspect-ratio: 1 / 2;
   scale: 1.05;
   object-fit: cover;
-  /* object-position: center; */
+  object-position: center;
+}
+
+@media screen and (max-width: 450px) {
+  iframe {
+    width: 90%;
+    aspect-ratio: 16/9;
+  }
+
+  .gallery-ctn {
+    width: 90%;
+    columns: 2;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .sec-six-content-ctn > p {
+    line-height: 30px;
+    margin-top: -40px;
+    color: #606060;
+    text-align: center;
+  }
 }

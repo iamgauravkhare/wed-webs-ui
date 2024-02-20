@@ -3,6 +3,16 @@
   src: url("../assets/fonts/Saudagar.ttf");
 }
 
+@font-face {
+  font-family: "SnellBT";
+  src: url("../assets/fonts/SnellBT.ttf");
+}
+
+@font-face {
+  font-family: "gilroy-regular";
+  src: url("../assets/fonts/Gilroy-Regular.otf");
+}
+
 .sec-seven {
   width: 100%;
   display: flex;
@@ -14,6 +24,21 @@
   background-size: cover;
   color: #c6af90;
   position: relative;
+  font-family: "gilroy-regular";
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.sec-seven > svg {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  transform: rotate(0deg);
+  z-index: 960;
+}
+
+.curve-shape-svg {
+  fill: #faf9f6;
 }
 
 .sec-seven-cover-ctn {
@@ -29,27 +54,15 @@
   width: 100%;
   display: flex;
   padding: 0px 20px;
-  padding-top: 200px;
-  padding-bottom: 60px;
+  margin-top: 200px;
+  padding-bottom: 100px;
   align-items: center;
   justify-content: center;
   gap: 40px;
   flex-direction: column;
   color: black;
   text-align: center;
-  z-index: 12000;
-}
-
-.sec-seven > svg {
-  width: 100%;
-  position: absolute;
-  top: 0%;
-  transform: rotate(0deg);
-  z-index: 2000;
-}
-
-.curve-shape-svg {
-  fill: #faf9f6;
+  z-index: 960;
 }
 
 .counter-ctn-cover {
@@ -67,19 +80,16 @@
   background-position: center;
   padding: 10px;
   border-radius: 25px;
-  /* height: 100vh; */
   display: flex;
   align-items: center;
   position: relative;
   justify-content: center;
-  gap: 20px;
-  background-color: #a4ab91;
+  gap: 30px;
   flex-direction: column;
-  /* overflow: hidden; */
 }
 
 .counter-ctn > img {
-  width: 200px;
+  width: 175px;
 }
 
 .counter-box-ctn {
@@ -88,27 +98,29 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  display: none;
   width: 100%;
 }
 
 .counter-box {
-  /* height: 50px; */
-  /* width: 100px; */
+  height: 75px;
+  width: 100px;
   display: flex;
-  padding: 20px 40px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: white;
   background-color: #a4ab91;
   border-radius: 5px;
+  font-size: 18px;
 }
 
 .sec-seven-content-ctn > p {
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
-  color: white;
+  color: #757a3e;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "SnellBT";
 }
 
 .sec-seven-btn {
@@ -120,9 +132,17 @@
   color: white;
   padding: 20px 40px;
   font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   letter-spacing: 2px;
   font-weight: 600;
   transition: all 0.3s linear;
+}
+
+.sec-seven-btn > i {
+  font-size: 20px;
 }
 
 .sec-seven-btn:hover {
@@ -142,11 +162,14 @@
 
   .sec-seven-content-ctn {
     padding: 0px 0px;
-    padding-top: 200px;
-    padding-bottom: 60px;
+    padding-top: 0px;
+    margin: 100px 0px;
+    margin-bottom: 200px;
+    padding-bottom: 50px;
   }
 
   .sec-seven-content-ctn > p {
+    padding: 0px 20px;
     color: #757a3e;
   }
 
@@ -154,17 +177,17 @@
     padding: 10px;
     background-color: #a4ab91;
     border-radius: 300px;
-    width: 80%;
-    /* overflow: hidden; */
+    width: 85%;
   }
 
   .counter-ctn {
     border-radius: 300px;
+    height: 900px;
   }
 
   .counter-box {
-    padding: 10px 20px;
-    font-size: 14px;
+    font-size: 10px;
+    margin-top: 100px;
   }
 
   .sec-seven-bg {

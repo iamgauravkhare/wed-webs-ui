@@ -41,7 +41,7 @@ body {
   position: relative;
   overflow: hidden;
   background-color: #faf9f6;
-  /* display: none; */
+  display: none;
 }
 
 .border {
